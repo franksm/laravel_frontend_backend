@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\About;
 use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -54,6 +55,6 @@ class AboutController extends Controller
 
         $about->save();
 
-        return redirect()->route('home');
+        return redirect(RouteServiceProvider::HOME);
     }
 }

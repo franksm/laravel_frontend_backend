@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Website;
 use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
@@ -33,6 +34,6 @@ class WebsiteController extends Controller
         $website->subtitle = $request->input('subtitle');
         $website->footer = $request->input('footer');
         $website->save();
-        return redirect()->route('home');
+        return redirect(RouteServiceProvider::HOME);
     }
 }

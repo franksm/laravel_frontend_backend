@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Store;
 use App\Http\Controllers\Controller;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 
 class StoreController extends Controller
@@ -74,6 +75,6 @@ class StoreController extends Controller
 
         $store->save();
 
-        return redirect()->route('home');
+        return redirect(RouteServiceProvider::HOME);
     }
 }
