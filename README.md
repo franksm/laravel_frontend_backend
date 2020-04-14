@@ -1,5 +1,7 @@
 # 咖啡商店
 
+>[參考至此教學連結](https://dometi.com.tw/blog/category/%E7%B6%B2%E9%A0%81/%E7%B6%B2%E9%A0%81%E5%BE%8C%E7%AB%AF/laravel/)
+
 ## 前置作業
 
 1. 重建 Laravel
